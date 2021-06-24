@@ -1,0 +1,247 @@
+//------------------------------------------------------------
+// ANNOUNCEMENT BAR
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+.header-top-bar {
+  width: 100%;
+}
+
+.header-info-top {
+  @include center-center;
+
+  a {
+    margin-bottom: 0;
+
+    .header-info-item {
+      text-align: center;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 300;
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+  }
+}
+
+//------------------------------------------------------------
+// MODAL POP UP
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+.modal {
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 10;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(2, 2, 2, 0.6);
+  /* Fallback color */
+  background-color: rgba(2, 2, 2, 0.6);
+  /* Black w/ opacity */
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  @include center-center-column;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 2em;
+  z-index: 999;
+
+  width: 90%;
+  height: initial;
+
+  @media (min-width: #{$screen-md}) {
+    width: 50%;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.6rem;
+
+    @media (min-width: #{$screen-md}) {
+      font-size: 3.6rem;
+    }
+  }
+
+  p {
+    max-width: 90%;
+    text-align: center;
+
+    @media (min-width: #{$screen-md}) {
+      max-width: 70%;
+    }
+  }
+}
+
+.modal-logo {
+  @include center-center;
+  margin-bottom: 1em;
+  width: 50px;
+
+  @media (min-width: #{$screen-md}) {
+    width: 150px;
+    margin-bottom: 2em;
+  }
+
+  .st0 {
+    fill: $color-primary;
+  }
+}
+
+.close-group {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  @include center-center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+
+  .close {
+    color: $color-primary;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+
+    &:hover,
+    &:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+//------------------------------------------------------------
+// PRE-LOADER
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+.pre_loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $black;
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+  height: 100vh;
+  // display: none;
+}
+
+.pre_loader.hidden__preloader {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.centered_pre__loader {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  @include center-center;
+}
+
+.pl--title {
+  position: absolute;
+}
+
+.pl--title,
+.pl-master-title,
+.pl-text-b {
+  color: white;
+}
+
+.last-pl--title {
+  color: $orange;
+}
+
+.pl-text-b {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-size: 1.75vw;
+  margin-right: -1rem;
+  text-align: right;
+}
+
+.pl-title-group {
+  @include end-start-column;
+  position: relative;
+}
+
+.pl-master-title {
+  display: flex;
+  font-size: 6vw;
+  margin-bottom: 0;
+}
+
+.pl-text-zone {
+  @include end-center-column;
+  display: block;
+
+  .text-holder {
+    margin-bottom: 5px;
+    overflow: hidden;
+
+    * {
+      margin: 0;
+    }
+  }
+
+  .ttl-holder {
+    margin-bottom: 5px;
+  }
+}
+
+.pl__logo-mark {
+  display: none;
+
+  svg {
+    overflow: unset;
+  }
+  
+
+    path#ns-path {
+      stroke-dasharray: 2189;
+      stroke-dashoffset: 2189;
+      stroke: $white;
+      animation-duration: 500ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+  }
+}
+
+.pl__logo-mark #ns-path.svg-in {
+  animation-name: svg-in;
+}
+
+@keyframes svg-in {
+  0% {
+    stroke-dashoffset: 2189;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

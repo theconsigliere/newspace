@@ -1,0 +1,94 @@
+{
+    "key": "group_5ed41a3cef2f4",
+    "title": "Header",
+    "fields": [
+        {
+            "key": "field_5ed41a3d24d89",
+            "label": "Header Layouts",
+            "name": "header_layouts",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5ed52bb09279c": {
+                    "key": "layout_5ed52bb09279c",
+                    "name": "logo_middle",
+                    "label": "Logo Middle - Menu Right - Socials Left",
+                    "display": "table",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ed52bb09279d",
+                            "label": "Logo",
+                            "name": "logo",
+                            "type": "image",
+                            "instructions": "Insert your logo here, we recommend SVG, PNG or JPG",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "post-thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_601a8a88498cf",
+                            "label": "Button",
+                            "name": "button",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-header"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1620376420
+}

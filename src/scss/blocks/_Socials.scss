@@ -1,0 +1,90 @@
+//------------------------------------------------------------
+// Pre Footer Socials
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+.social-item {
+  @include center-center;
+
+  * {
+    margin: 0;
+  }
+
+  .social-logo {
+    width: 25px;
+    height: 25px;
+    @include center-center;
+    display: block;
+
+    i {
+      font-size: 20px;
+    }
+  }
+}
+
+// Page Socials
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+.social__buttons {
+  @include center-center;
+  padding: calc(#{$page-margin-column} / 2) 0;
+  width: 100%;
+  display: flex !important;
+
+  a {
+    margin: 0;
+
+    .social-item {
+      margin: 0 20px;
+      display: flex !important;
+
+      .social-logo {
+        width: 70px;
+        height: 70px;
+        border: 1px $light-gray solid;
+        border-radius: 50%;
+        display: flex !important;
+
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+//------------------------------------------------------------
+// Pre Footer Menu & Socials
+//------------------------------------------------------------
+//------------------------------------------------------------
+
+.pre__footer_section {
+  padding: 1vh 0;
+}
+
+.footer_menu__buttons {
+  @include center-between-column;
+  padding: calc(#{$page-margin-column} / 2) 0;
+  width: 100%;
+
+  @media (min-width: #{$screen-lg}) {
+    @include center-center;
+  }
+
+  .button,
+  .social-item {
+    margin: 20px 0;
+    display: block !important;
+
+    @media (min-width: #{$screen-lg}) {
+      margin: 0 20px;
+    }
+
+    .social-logo {
+      .social-logo i {
+        font-size: 40px;
+      }
+    }
+  }
+}

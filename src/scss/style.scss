@@ -1,0 +1,70 @@
+/******************************************************************
+Site Name: Dirty Martini Starter Theme 
+Theme URI: https://www.dirty-martini.com/
+Author: Maxwell Kirwin
+Author URI: https://www.maxwellkirwin.co.uk/
+Description: Dirty Martini 
+Official Theme.
+
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here, you'll see we are calling in
+the separate media queries. The base mobile goes outside any query
+and is called at the beginning, after that we call the rest
+of the styles inside media queries.
+
+Helpful articles on Sass file organization:
+http://thesassway.com/advanced/modular-css-naming-conventions
+
+******************************************************************/
+
+/*********************
+IMPORTING GUTTENBERG BLOCKS & BASE VARIABLES
+*********************/
+
+@import "editor-styles";
+
+/*********************
+IMPORTING FRONT END BASE
+*********************/
+
+// @import "base/Typography";
+// @import "base/Button";
+@import "base/Base";
+
+/*********************
+IMPORTING CORE
+*********************/
+
+@import "core/Header";
+@import "core/Footer";
+@import "core/Swiper";
+@import "core/Barba";
+@import "core/Settings";
+@import "core/Landscape";
+@import "core/Loco-scroll";
+
+// Styles for the custom dashboard widget in the admin
+#plate_dashboard_widget {
+  padding-bottom: 1em;
+
+  * {
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.664em;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+#wpfooter {
+  display: none;
+}

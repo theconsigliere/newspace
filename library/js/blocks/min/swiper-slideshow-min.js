@@ -1,0 +1,2 @@
+"use strict";!function(e){var n=function(){new Swiper(".swiper-container",{loop:!0,pagination:{el:".swiper-pagination",type:"progressbar"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}})};e(document).ready((function(){e(".slideshow").each((function(){n()}))})),window.acf&&window.acf.addAction("render_block_preview/type=slideshow",n)}(jQuery);
+//# sourceMappingURL=swiper-slideshow-min.js.map

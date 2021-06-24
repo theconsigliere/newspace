@@ -1,0 +1,180 @@
+{
+    "key": "group_5ee7bd429de0f",
+    "title": "Hero: Image Side - Text Side",
+    "fields": [
+        {
+            "key": "field_5ee7bd8fae220",
+            "label": "Hero Column",
+            "name": "hero_column",
+            "type": "repeater",
+            "instructions": "Add a new Hero Column",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 2,
+            "layout": "table",
+            "button_label": "Add Column",
+            "sub_fields": [
+                {
+                    "key": "field_5ee7bda0ae221",
+                    "label": "Hero Item",
+                    "name": "hero_item",
+                    "type": "flexible_content",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layouts": {
+                        "layout_5ee7bdb947ea2": {
+                            "key": "layout_5ee7bdb947ea2",
+                            "name": "hero_title_section",
+                            "label": "Hero Title Section",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ee7bd42a8e60",
+                                    "label": "Title",
+                                    "name": "hero_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5ee7bd42a8e66",
+                                    "label": "Sub Title",
+                                    "name": "hero_sub_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5ee7bd42a8e6c",
+                                    "label": "Description",
+                                    "name": "hero_desc",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_5ee7bdf6ae222",
+                                    "label": "Button",
+                                    "name": "hero_button",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        "layout_5ee7be10ae223": {
+                            "key": "layout_5ee7be10ae223",
+                            "name": "hero_image_section",
+                            "label": "Hero Image Section",
+                            "display": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ee7bd42a8e4e",
+                                    "label": "Image",
+                                    "name": "hero_imageside",
+                                    "type": "image",
+                                    "instructions": "Add a background Header Image",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "id",
+                                    "preview_size": "post-thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": 2,
+                                    "mime_types": ""
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        }
+                    },
+                    "button_label": "Add Section",
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/hero-textside-imageside"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1598729772
+}

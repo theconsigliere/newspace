@@ -1,0 +1,2 @@
+"use strict";var cursor=document.querySelector(".js-ns-cursor"),section=document.querySelector(".ns-slider__section");section.addEventListener("mousemove",(function(e){cursor.classList.add("show-cursor");cursor.getBoundingClientRect();cursor.style.left=e.pageX+"px",cursor.style.top=e.pageY+"px"})),section.addEventListener("mouseout",(function(e){cursor.classList.remove("show-cursor")}));
+//# sourceMappingURL=cursor-min.js.map

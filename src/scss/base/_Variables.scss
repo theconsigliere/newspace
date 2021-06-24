@@ -1,0 +1,47 @@
+/******************************************************************
+ Site Name:
+ Author:
+ 
+ Stylesheet: Variables
+ 
+ Here is where we declare all our variables like colors, fonts,
+ base values, and defaults. We want to make sure this file ONLY
+ contains variables that way our files don't get all messy.
+ No one likes a mess.
+ 
+ ******************************************************************/
+
+/*********************
+ screen sizes
+ Need help w/ choosing your colors? Try this site out:
+ http://0to255.com/
+ *********************/
+
+$screen-xs: 0;
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1440px;
+$screen-xxxl: 1920px;
+
+// Attributes ---------------------------------------------------------- */
+
+$drop-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+$drop-shadow-subtle: -2px 1px 17px 1px rgba(0, 0, 0, 0.1);
+
+$bb: 2px solid white;
+$page-margin-column: 5vw;
+$page-margin-row: 5vh;
+$text-space: 2rem;
+
+// Animation ---------------------------------------------------------- */
+
+$bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
+$timing: 1s;
+
+
+:root {
+    --v-spacing: 10vh;
+    --h-gutter: 6.6vw;
+}

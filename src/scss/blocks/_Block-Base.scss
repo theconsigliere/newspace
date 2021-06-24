@@ -1,0 +1,98 @@
+// BLock Base
+
+/* Custom Editor Styles */
+
+.wp-block {
+ // background: $black;
+  h1 {
+    font-size: 36px;
+    line-height: 1.5em;
+  }
+
+  h2 {
+    font-size: 25px;
+    line-height: 1.5em;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+
+  h6 {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+
+  p,
+  a,
+  label {
+    font-size: 13px;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .full-width-hero,
+  .js_hero__imageside_image {
+    background: $grey;
+  }
+
+  .main-button,
+  .block-button,
+  .underline-button {
+    line-height: 2.8rem;
+    height: 2.8rem;
+    padding: 0 1.5rem;
+  }
+
+  input {
+    height: 2rem !important;
+  }
+
+  input[type="submit"] {
+    height: initial !important;
+  }
+}
+
+button {
+  margin-bottom: 0 !important;
+}
+
+// Sections
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.full-width-section {
+  padding: 5vh 0;
+  width: 100%;
+
+  @media (min-width: #{$screen-xxl}) {
+    padding: 10vh 0;
+  }
+}
+
+.no-padding-section {
+  @include center-between-column;
+  width: 100%;
+
+  @media (min-width: #{$screen-lg}) {
+    @include center-between;
+  }
+}
+
+.column-section {
+  @include center-between-column;
+  padding: $page-margin-column 0;
+}

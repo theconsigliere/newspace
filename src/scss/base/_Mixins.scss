@@ -1,0 +1,359 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Mixins Stylesheet
+
+This is where you can take advantage of Sass' great features: Mixins.
+I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques gradients.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more.
+
+Helpful:
+http://sachagreif.com/useful-sass-mixins/
+http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code
+http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
+
+******************************************************************/
+
+@keyframes topnavbar {
+  from {
+    transform: translateY(0) rotateZ(0deg);
+  }
+  to {
+    transform: translateY(9px) rotateZ(45deg);
+  }
+}
+
+@keyframes bottomnavbar {
+  from {
+    transform: translateY(0) rotateZ(0deg);
+  }
+  to {
+    transform: translateY(-5px) rotateZ(-45deg);
+  }
+}
+
+@keyframes middlenavbar {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@mixin resetButton {
+  appearance: none;
+  background: none;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+@mixin dropShadow {
+  text-shadow: $drop-shadow;
+}
+
+@mixin noList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  & li {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@mixin strong {
+  font-weight: 700;
+}
+
+@mixin unorderedList {
+  @include noList;
+  display: block;
+
+  &li {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding: 0 0 0 15px;
+    color: $color-secondary;
+
+    & p {
+      margin: 0;
+      padding: 0;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $color-primary;
+      top: 10px;
+      left: 0;
+    }
+  }
+}
+
+@mixin orderedList {
+  @include noList;
+  display: block;
+
+  & li {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding: 0 0 0 20px;
+    color: $color-secondary;
+
+    & p {
+      margin: 0;
+      padding: 0;
+    }
+
+    &:first-child {
+      counter-reset: section;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      counter-increment: section;
+      content: counters(section, "." ".");
+      font-weight: bold;
+      color: $color-primary;
+    }
+  }
+}
+
+@mixin specialList {
+  @include noList;
+  display: block;
+
+  & li {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding: 0 0 0 25px;
+    color: $color-secondary;
+
+    & p {
+      margin: 0;
+      padding: 0;
+    }
+
+    &:before {
+      content: "🍒";
+      display: block;
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $color-primary;
+      top: 3px;
+      left: 0;
+    }
+  }
+}
+
+@mixin reset-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  text-align: left;
+}
+
+//FLEXBOX
+//----------------------------------------
+
+@mixin center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@mixin center-between-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@mixin center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@mixin center-center-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin center-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+@mixin center-end-column {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+@mixin center-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+@mixin center-start-column {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@mixin end-between {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@mixin end-between-column {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@mixin end-center {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@mixin end-center-column {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin end-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+@mixin end-end-column {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+@mixin start-between {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@mixin start-between-column {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@mixin start-center {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@mixin start-center-column {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin start-end {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+@mixin start-end-column {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+@mixin end-start {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+@mixin end-start-column {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@mixin start-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+@mixin start-start-column {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}

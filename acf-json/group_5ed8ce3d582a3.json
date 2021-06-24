@@ -1,0 +1,322 @@
+{
+    "key": "group_5ed8ce3d582a3",
+    "title": "Footer",
+    "fields": [
+        {
+            "key": "field_5ed8ce5416eb2",
+            "label": "Footer Columns",
+            "name": "footer_columns",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 2,
+            "max": 2,
+            "layout": "row",
+            "button_label": "Add Column",
+            "sub_fields": [
+                {
+                    "key": "field_5ed8ce3d7b1d8",
+                    "label": "Footer Column",
+                    "name": "footer_components",
+                    "type": "flexible_content",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layouts": {
+                        "layout_5d9c4e2ce36cf": {
+                            "key": "layout_5d9c4e2ce36cf",
+                            "name": "footer_menu",
+                            "label": "Menu",
+                            "display": "table",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ed90149feed6",
+                                    "label": "Title",
+                                    "name": "menu_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5ed8ce3d7f049",
+                                    "label": "Menu",
+                                    "name": "menu",
+                                    "type": "menu",
+                                    "instructions": "Choose your menu (go to Appearance > Menus to create your menu)",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": "nav-logo-left"
+                                    },
+                                    "return_format": "id",
+                                    "allow_null": 0
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        "layout_5ed52bb09279c": {
+                            "key": "layout_5ed52bb09279c",
+                            "name": "footer_logo",
+                            "label": "Logo",
+                            "display": "table",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ed8ce3da729a",
+                                    "label": "Logo",
+                                    "name": "logo",
+                                    "type": "image",
+                                    "instructions": "Insert your logo here, we recommend SVG, PNG or JPG",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "id",
+                                    "preview_size": "post-thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        "layout_5ed8d14216eb3": {
+                            "key": "layout_5ed8d14216eb3",
+                            "name": "footer_socials",
+                            "label": "Socials",
+                            "display": "table",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ed8f9c9cc194",
+                                    "label": "Title",
+                                    "name": "social_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5ed8ce3dab144",
+                                    "label": "Socials",
+                                    "name": "socials",
+                                    "type": "repeater",
+                                    "instructions": "Add your Social Icons",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "collapsed": "",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "table",
+                                    "button_label": "",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_60cc56bcde314",
+                                            "label": "Social Title",
+                                            "name": "social_title",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_5ed8ce3daee02",
+                                            "label": "Social Link",
+                                            "name": "social_link",
+                                            "type": "link",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "array"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        "layout_5ed8d19316eb4": {
+                            "key": "layout_5ed8d19316eb4",
+                            "name": "footer_contact_details",
+                            "label": "Contact Details",
+                            "display": "table",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ed8fa66cc196",
+                                    "label": "Title",
+                                    "name": "details_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5ed8d1a216eb5",
+                                    "label": "Contact Details Group",
+                                    "name": "details",
+                                    "type": "repeater",
+                                    "instructions": "Add your Social Icons",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "collapsed": "",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "table",
+                                    "button_label": "",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5ed8d1a216eb6",
+                                            "label": "Contact Icon",
+                                            "name": "contact_icon",
+                                            "type": "font-awesome",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "icon_sets": [
+                                                "fas",
+                                                "far",
+                                                "fab"
+                                            ],
+                                            "custom_icon_set": "",
+                                            "default_label": "",
+                                            "default_value": "",
+                                            "save_format": "element",
+                                            "allow_null": 0,
+                                            "show_preview": 1,
+                                            "enqueue_fa": 1,
+                                            "fa_live_preview": "",
+                                            "choices": []
+                                        },
+                                        {
+                                            "key": "field_5ed8d1a216eb7",
+                                            "label": "Contact Link & Title",
+                                            "name": "contact_link",
+                                            "type": "link",
+                                            "instructions": "Add the link and title of your specified contact option.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "array"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        }
+                    },
+                    "button_label": "Add Row",
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-footer"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1624005501
+}

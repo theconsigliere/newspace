@@ -1,0 +1,2 @@
+"use strict";!function(i){var e=function(i){i.find(".slick-slider").slick({dots:!0,infinite:!0,speed:300,slidesToShow:1,adaptiveHeight:!0,rows:0})};i(document).ready((function(){i(".slideshow").each((function(){e(i(this))}))})),window.acf&&window.acf.addAction("render_block_preview/type=slideshow",e)}(jQuery);
+//# sourceMappingURL=user-slick-min.js.map

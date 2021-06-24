@@ -1,0 +1,98 @@
+{
+    "key": "group_5ee7cf133889c",
+    "title": "Hero: Video",
+    "fields": [
+        {
+            "key": "field_5ee7cfc5b5a7e",
+            "label": "Hero Video",
+            "name": "hero_video",
+            "type": "oembed",
+            "instructions": "Choose your video (youtube\/vimeo) link of choice",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        },
+        {
+            "key": "field_5ee7d019b5a7f",
+            "label": "Video Overlay Colour",
+            "name": "video_colour",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5ee7cf134d21d",
+            "label": "Logo",
+            "name": "video_image",
+            "type": "image",
+            "instructions": "Add a background Header Image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "post-thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": 2,
+            "mime_types": ""
+        },
+        {
+            "key": "field_5ee7cf134d229",
+            "label": "Title",
+            "name": "video_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/hero-video"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1592250727
+}

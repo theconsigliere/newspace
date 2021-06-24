@@ -1,0 +1,2 @@
+"use strict";!function(i){var e=function(e){i(".slick-slider").slick({dots:!0,infinite:!0,speed:300,slidesToShow:1,adaptiveHeight:!0})};i(document).ready((function(){e()})),window.acf&&window.acf.addAction("render_block_preview",e)}(jQuery);
+//# sourceMappingURL=user-flickity-min.js.map

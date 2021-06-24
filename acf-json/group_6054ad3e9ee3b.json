@@ -1,0 +1,270 @@
+{
+    "key": "group_6054ad3e9ee3b",
+    "title": "Header: Fullscreen Header",
+    "fields": [
+        {
+            "key": "field_6054b96da8f0a",
+            "label": "Default Menu image",
+            "name": "default_menu_image",
+            "type": "image",
+            "instructions": "This is image is shown when you open the menu",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6054ad482d650",
+            "label": "Add a Menu Item",
+            "name": "add_a_menu_item",
+            "type": "flexible_content",
+            "instructions": "Add a menu Item",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_6054ad90d656f": {
+                    "key": "layout_6054ad90d656f",
+                    "name": "menu_link",
+                    "label": "Menu Link",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6054aee32d658",
+                            "label": "Menu Item Image",
+                            "name": "menu_item_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_6054adbb2d652",
+                            "label": "Menu Item",
+                            "name": "menu_item",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_6054ae0b2d655",
+                            "label": "Sub Menu",
+                            "name": "sub_menu",
+                            "type": "select",
+                            "instructions": "Does the menu item need a sub menu?",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "enable": "Enable",
+                                "disable": "Disable"
+                            },
+                            "default_value": "disable",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_6054aea62d656",
+                            "label": "Add Sub Menu Items",
+                            "name": "sub_menu_items",
+                            "type": "repeater",
+                            "instructions": "Add sub menu items, that will be displayed under the menu item.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_6054ae0b2d655",
+                                        "operator": "==",
+                                        "value": "enable"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6054aeb62d657",
+                                    "label": "Sub Menu Item",
+                                    "name": "sub_menu_item",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6054af552d659": {
+                    "key": "layout_6054af552d659",
+                    "name": "blog_item",
+                    "label": "Blog Item",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6054b77a0fbd6",
+                            "label": "Blog Link Item Image",
+                            "name": "blog_link_item_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_6054af602d65a",
+                            "label": "Blog Link Item",
+                            "name": "blog_link_item",
+                            "type": "link",
+                            "instructions": "Link to intended blog page. This will then generate a number next to link, displaying how many blogs.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Menu Item",
+            "min": "",
+            "max": ""
+        },
+        {
+            "key": "field_6054ade72d653",
+            "label": "Add Social Link",
+            "name": "add_social_link",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_6054adf52d654",
+                    "label": "Social",
+                    "name": "social",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-header"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1616180174
+}
